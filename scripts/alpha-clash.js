@@ -31,7 +31,7 @@ function handleKeyboardButtonPress(event){
     }
 
 }
-// -------capture keyboard keypress---------
+// ---------capture keyboard keypress---------
 document.addEventListener('keyup', handleKeyboardButtonPress)
 
 
