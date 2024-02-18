@@ -1,8 +1,8 @@
-function hideScreenSection(elementId){
+function hideElementById(elementId){
     const homeScreen = document.getElementById(elementId);
     homeScreen.classList.add('hidden');
 }
-function showGroundSection(elementId){
+function showElementById(elementId){
     const playGround = document.getElementById(elementId);
     playGround.classList.remove('hidden');
 }
@@ -17,6 +17,23 @@ function removeBackgroundColorById(elementId){
     element.classList.remove('bg-orange-400');
 }
 
+function getTextElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueText = element.innerText;
+    const value = parseInt(elementValueText);
+    return value;
+}
+
+function setTextElementValueById(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
+
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
 
 function getARandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
